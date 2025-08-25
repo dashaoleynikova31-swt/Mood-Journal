@@ -21,7 +21,25 @@ while True:
         print("Please, enter the correct number!")
 
 test = input("Did you like this Mood Journal?")
-if test.lower() = "yes":
+if test.lower() == "yes":
     print("You're welcome!")
 else:
     print("OK! No problem! I'll to practice much better!")
+
+# Mood Journal 📝💖
+
+A simple Python program to track your daily moods.
+
+## Features:
+- Add your current mood
+- View all recorded moods
+- Exit the program
+- Provide feedback at the end
+
+## How to use:
+1. Run the program.
+2. Choose an option: add mood, show all moods, or exit.
+3. Your moods are saved in a list and displayed whenever you want.
+4. Give feedback at the end to make the program even more fun!
+
+Feel free to fork, improve, and share your Mood Journal!
