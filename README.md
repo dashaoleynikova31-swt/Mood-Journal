@@ -1,30 +1,42 @@
-print("Mood Journal")
+# Mood Journal - a simple program to track your daily moods
 
+# Create an empty list to store moods
 moods = []
 
+# Start an infinite loop to show the menu until the user exits
 while True:
-    print("1 - Add the mood: ")
+    # Display menu options
+    print("1 - Add the mood")
     print("2 - Show all moods")
     print("3 - Exit")
     
-    choise = input("Choise the option: ")
-    if choise == "1":
+    # Ask the user to choose an option
+    choice = input("Choose the option: ")
+    
+    if choice == "1":
+        # Add a new mood to the list
         mood = input("Enter your mood: ")
         moods.append(mood)
         print("Mood saved!")
-    elif choise == "2":
+    elif choice == "2":
+        # Show all recorded moods
         print(f"Here are all your moods today: {moods}")
-    elif choise == "3":
+    elif choice == "3":
+        # Exit the program
         print("Bye!")
         break
     else:
+        # Handle invalid menu option
         print("Please, enter the correct number!")
 
-test = input("Did you like this Mood Journal?")
+# Ask for feedback after exiting the main menu
+test = input("Did you like this Mood Journal? ")
+
+# Respond based on user's feedback
 if test.lower() == "yes":
     print("You're welcome!")
 else:
-    print("OK! No problem! I'll to practice much better!")
+    print("OK! No problem! I'll practice much better!")
 
 # Mood Journal 📝💖
 
