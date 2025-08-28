@@ -16,6 +16,7 @@ A simple Python program to track your daily moods.
 
 Feel free to fork, improve, and share your Mood Journal!
 
+print("\nMood Journal/t")
 
 moods = []
 
