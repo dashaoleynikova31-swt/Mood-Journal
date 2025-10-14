@@ -16,18 +16,18 @@ A simple Python program to track your daily moods.
 
 Feel free to fork, improve, and share your Mood Journal!
 
-print("\nMood Journal/t")
+#
+print("\nMood Journal\n")
 
 moods = []
 
-while True:
-    # Display menu options
+while True: # Display menu options 
     print("1 - Add the mood")
     print("2 - Show all moods")
     print("3 - Exit")
-    
+
     choice = input("Choose the option: ")
-    
+
     if choice == "1":
         mood = input("Enter your mood: ")
         moods.append(mood)
@@ -39,11 +39,10 @@ while True:
         break
     else:
         print("Please, enter the correct number!")
-
+    
 test = input("Did you like this Mood Journal? ")
-
-if test.lower() == "yes":
+if test.lower() in ["yes", "sure"]:
     print("You're welcome!")
 else:
     print("OK! No problem! I'll practice much better!")
-
+#
