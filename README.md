@@ -7,7 +7,9 @@ A simple Python program to track your daily moods.
 - Provide feedback at the end
 
 print("\nMood Journal\n")
+
 moods = []
+
 while True:  # Display menu options 
     print("1 - Add the mood")
     print("2 - Show all moods")
@@ -29,4 +31,13 @@ while True:  # Display menu options
     elif choice == "3":
         print("Bye!")
         break
+
+    else:
+        print("Please, enter the correct number!\n")
+
+test = input("Did you like this Mood Journal? ")
+if test.lower() in ["yes", "sure", "y", "yeah"]:
+    print("You're welcome!")
+else:
+    print("OK! No problem! I'll practice much better!")
 
