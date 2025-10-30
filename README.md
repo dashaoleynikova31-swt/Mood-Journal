@@ -1,27 +1,15 @@
-# Mood Journal 📝💖
-
+# Mood Journal 
 A simple Python program to track your daily moods.
-
 ## Features:
 - Add your current mood
 - View all recorded moods
 - Exit the program
 - Provide feedback at the end
 
-## How to use:
-1. Run the program.
-2. Choose an option: add mood, show all moods, or exit.
-3. Your moods are saved in a list and displayed whenever you want.
-4. Give feedback at the end to make the program even more fun!
-
-Feel free to fork, improve, and share your Mood Journal!
-
-#
 print("\nMood Journal\n")
-
 moods = []
 
-while True: # Display menu options 
+while True:  # Display menu options 
     print("1 - Add the mood")
     print("2 - Show all moods")
     print("3 - Exit")
@@ -31,18 +19,15 @@ while True: # Display menu options
     if choice == "1":
         mood = input("Enter your mood: ")
         moods.append(mood)
-        print("Mood saved!")
+        print("Mood saved!\n")
+
     elif choice == "2":
-        print(f"Here are all your moods today: {moods}")
+        if moods:
+            print(f"Here are all your moods today: {moods}\n")
+        else:
+            print("You haven't added any moods yet.\n")
+
     elif choice == "3":
         print("Bye!")
         break
-    else:
-        print("Please, enter the correct number!")
-    
-test = input("Did you like this Mood Journal? ")
-if test.lower() in ["yes", "sure"]:
-    print("You're welcome!")
-else:
-    print("OK! No problem! I'll practice much better!")
-#
+
