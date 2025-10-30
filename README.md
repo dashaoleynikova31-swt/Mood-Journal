@@ -8,7 +8,6 @@ A simple Python program to track your daily moods.
 
 print("\nMood Journal\n")
 moods = []
-
 while True:  # Display menu options 
     print("1 - Add the mood")
     print("2 - Show all moods")
